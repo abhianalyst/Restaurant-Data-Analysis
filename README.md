@@ -1,22 +1,77 @@
-#  Cognifyz Data Analysis Project
+# Restaurant Data Analysis
 
-A comprehensive Data Analysis project completed as part of the **Cognifyz Technologies Data Analysis Internship**. This project explores restaurant data to uncover insights about cuisines, cities, pricing, ratings, online delivery, restaurant chains, and customer engagement using Python and data visualization techniques.
-
----
-
-##  Project Objectives
-
-- Analyze restaurant data to discover meaningful business insights.
-- Perform data cleaning and preprocessing.
-- Create visualizations to support data-driven conclusions.
-- Complete all Level 1, Level 2, and Level 3 internship tasks.
+A comprehensive Python-based data analysis project developed as part of the **Cognifyz Technologies Data Analysis Internship**. This project explores restaurant data to uncover meaningful business insights through data cleaning, exploratory data analysis (EDA), visualization, geographic analysis, clustering, and sentiment analysis.
 
 ---
 
-## 📂 Project Structure
+## Project Overview
+
+The objective of this project is to analyze restaurant data using Python and extract actionable insights that can support business decision-making.
+
+The project follows a structured analytics workflow:
+
+- Data Collection
+- Data Cleaning and Preprocessing
+- Exploratory Data Analysis (EDA)
+- Statistical Analysis
+- Data Visualization
+- Geographic Analysis
+- K-Means Clustering
+- Sentiment Analysis
+- Business Insights
+
+---
+
+## Features
+
+- Comprehensive data preprocessing
+- Missing value and duplicate handling
+- Exploratory Data Analysis (EDA)
+- Cuisine popularity analysis
+- City-wise restaurant analysis
+- Price range distribution
+- Online delivery analysis
+- Restaurant rating analysis
+- Cuisine combination analysis
+- Restaurant chain analysis
+- Geographic visualization using Folium
+- K-Means clustering
+- Sentiment analysis using rating text
+- Business insights and recommendations
+
+---
+
+## Technology Stack
+
+### Programming Language
+
+- Python
+
+### Libraries
+
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Plotly
+- Folium
+- Scikit-learn
+- NLTK
+- WordCloud
+
+### Development Tools
+
+- Jupyter Notebook
+- Visual Studio Code
+- Git
+- GitHub
+
+---
+
+## Project Structure
 
 ```
-Cognifyz-Data-Analysis
+Restaurant-Data-Analysis/
 │
 ├── data/
 │   ├── raw/
@@ -28,203 +83,165 @@ Cognifyz-Data-Analysis
 │   ├── 03_Level_2_Analysis.ipynb
 │   └── 04_Level_3_Analysis.ipynb
 │
-├── src/
-│
 ├── visuals/
-│   ├── level1/
-│   ├── level2/
-│   └── level3/
-│
-├── outputs/
 │
 ├── reports/
+│   ├── Internship_Project_Report.pdf
+│   ├── Internship_Project_Report.docx
+│   └── Restaurant_Data_Analysis_Presentation.pptx
 │
 ├── README.md
 ├── requirements.txt
-├── .gitignore
-└── LICENSE
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
-##  Dataset
+## Dataset
 
 The dataset contains restaurant information including:
 
 - Restaurant Name
-- City
 - Country
+- City
+- Address
+- Locality
 - Cuisines
-- Price Range
 - Aggregate Rating
+- Rating Text
 - Votes
+- Average Cost for Two
+- Price Range
 - Online Delivery
 - Table Booking
-- Latitude & Longitude
+- Latitude
+- Longitude
 
 ---
 
-#  Data Cleaning
+## Project Workflow
 
-The dataset was cleaned by:
-
-- Removing duplicate records
-- Handling missing values
-- Standardizing column names
-- Verifying data types
-- Creating a processed dataset for analysis
-
----
-
-#  Level 1 Analysis
-
-###  Task 1 – Top Cuisines
-
-- Identified the top three cuisines.
-- Calculated their percentage share.
-- Created bar chart visualizations.
-
----
-
-###  Task 2 – City Analysis
-
-- City with the highest number of restaurants.
-- Average rating by city.
-- Highest-rated cities.
-- Restaurant distribution across cities.
-
----
-
-###  Task 3 – Price Range Distribution
-
-- Distribution of restaurants by price category.
-- Percentage analysis.
-- Bar and pie charts.
-
----
-
-###  Task 4 – Online Delivery
-
-- Percentage of restaurants offering online delivery.
-- Comparison of ratings based on delivery availability.
-
----
-
-#  Level 2 Analysis
-
-###  Restaurant Ratings
-
-- Rating distribution.
-- Rating categories.
-- Average customer votes.
-
----
-
-###  Cuisine Combination
-
-- Most common cuisine combinations.
-- Highest-rated cuisine combinations.
-
----
-
-###  Geographic Analysis
-
-- Restaurant location visualization.
-- Geographic clustering.
-- Interactive Folium map.
-
----
-
-###  Restaurant Chains
-
-- Identified restaurant chains.
-- Highest-rated chains.
-- Most popular chains based on customer votes.
-
----
-
-#  Level 3 Analysis
-
-###  Restaurant Reviews
-
-- Sentiment analysis using Rating Text.
-- Distribution of customer sentiment.
-
----
-
-###  Votes Analysis
-
-- Most voted restaurants.
-- Least voted restaurants.
-- Correlation between votes and ratings.
-
----
-
-###  Price Range vs Services
-
-- Online Delivery vs Price Range.
-- Table Booking vs Price Range.
-
----
-
-#  Technologies Used
-
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Plotly
-- Folium
-- Scikit-learn
-- Jupyter Notebook
-
----
-
-#  Visualizations
-
-This project includes:
-
-- Bar Charts
-- Histograms
-- Pie Charts
-- Scatter Plots
-- Interactive Maps
-- Cluster Analysis
-
----
-
-#  Key Insights
-
-- North Indian cuisine is among the most common cuisines.
-- Restaurant distribution is concentrated in major cities.
-- Higher ratings generally attract more customer votes.
-- Premium restaurants are more likely to provide table booking.
-- Restaurant chains exhibit varying popularity and customer satisfaction.
-
----
-
-#  Installation
-
-Clone the repository
-
-```bash
-git clone https://github.com/yourusername/Cognifyz-Data-Analysis.git
+```
+Restaurant Dataset
+        │
+        ▼
+Data Cleaning
+        │
+        ▼
+Data Preprocessing
+        │
+        ▼
+Exploratory Data Analysis
+        │
+        ▼
+Level 1 Analysis
+        │
+        ▼
+Level 2 Analysis
+        │
+        ▼
+Level 3 Analysis
+        │
+        ▼
+Business Insights
 ```
 
-Navigate to the project folder
+---
+
+## Analysis Performed
+
+### Data Cleaning
+
+- Missing value analysis
+- Duplicate detection
+- Data type verification
+- Column standardization
+- Data preprocessing
+
+### Level 1 Analysis
+
+- Top cuisines
+- City-wise analysis
+- Price range distribution
+- Online delivery analysis
+
+### Level 2 Analysis
+
+- Restaurant rating analysis
+- Cuisine combination analysis
+- Geographic visualization
+- Restaurant chain analysis
+- K-Means clustering
+
+### Level 3 Analysis
+
+- Sentiment analysis
+- Customer votes analysis
+- Correlation analysis
+- Price range vs service availability
+
+---
+
+## Key Findings
+
+- North Indian cuisine is the most frequently served cuisine.
+- Metropolitan cities have the highest restaurant concentration.
+- Budget-friendly restaurants dominate the dataset.
+- Positive customer sentiment outweighs negative sentiment.
+- Restaurants with higher ratings generally receive more customer votes.
+- Premium restaurants are more likely to provide table booking services.
+- Geographic clustering identifies areas with high restaurant density.
+
+---
+
+## Business Insights
+
+The analysis demonstrates how restaurant data can be used to:
+
+- Understand customer preferences
+- Improve pricing strategies
+- Optimize restaurant expansion
+- Enhance customer experience
+- Identify popular cuisines
+- Improve operational decision-making
+- Support data-driven business planning
+
+---
+
+## Documentation
+
+Detailed project documentation is available in the **reports** directory.
+
+Contents include:
+
+- Internship Project Report
+- Project Presentation
+- Supporting Visualizations
+
+---
+
+## Installation
+
+Clone the repository:
 
 ```bash
-cd Cognifyz-Data-Analysis
+git clone https://github.com/abhianalyst/Restaurant-Data-Analysis.git
 ```
 
-Install dependencies
+Navigate to the project directory:
+
+```bash
+cd Restaurant-Data-Analysis
+```
+
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Launch Jupyter Notebook
+Launch Jupyter Notebook:
 
 ```bash
 jupyter notebook
@@ -232,15 +249,41 @@ jupyter notebook
 
 ---
 
-#  License
+## Future Improvements
 
-This project is developed for educational and internship purposes.
+Possible future enhancements include:
+
+- Restaurant recommendation system
+- Interactive dashboard using Streamlit
+- Power BI dashboard
+- Predictive analytics
+- Advanced Natural Language Processing
+- Real-time restaurant data integration
 
 ---
 
-#  Author
+## Internship Information
+
+**Organization:** Cognifyz Technologies
+
+**Internship:** Data Analysis Internship
+
+**Project:** Restaurant Data Analysis Using Python
+
+---
+
+## Author
 
 **Abhinav Kadam**
 
-- GitHub: https://github.com/abhianalyst
-- LinkedIn: https://www.linkedin.com/in/abhinavkadam47
+Bachelor of Science in Data Science
+
+GitHub: https://github.com/abhianalyst
+
+LinkedIn: https://www.linkedin.com/in/abhinavkadam47
+
+---
+
+## License
+
+This project is intended for educational and portfolio purposes. Refer to the LICENSE file for additional information.
